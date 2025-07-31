@@ -2,11 +2,16 @@
  setwd("C:/Users/danie/OneDrive/Documents/Postdoc/flyscrna/cellrangerouts/Library2")
 
 
+install.packages("Seurat")
+install.packages("dplyr")
+install.packages("patchwork")
+install.packages("ggplot2")
 
 ###Software needed. Use install.packages("Seurat") if not installed before
 library(dplyr)
 library(Seurat)
 library(patchwork)
+library(ggplot2)
 
 # Load the PBMC dataset
 pbmc.data <- Read10X(data.dir = "filtered_feature_bc_matrix")
