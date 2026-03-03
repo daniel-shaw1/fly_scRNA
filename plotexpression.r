@@ -1,3 +1,8 @@
+library(Seurat)
+library(SeuratData)
+library(ggplot2)
+library(patchwork)
+
 merged3objjoined <- readRDS(file = "merged3objjoined")
 
 ###Umap with colored cells
